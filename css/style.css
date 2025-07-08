@@ -1,0 +1,447 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#header-black{
+    background-color: rgb(0, 0, 0);
+    padding: 8px;
+}
+#header-black nav ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#header-black nav ul li{
+    width: 150px;
+    /* border: 1px solid red; */
+    color: rgb(255, 255, 255);
+}
+#header-black nav ul li a{
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    font-size: 8pt;
+    text-transform: capitalize;
+    text-decoration: none ;
+}
+#header-black nav ul li a:hover{
+    color: rgb(255, 255, 50)
+}
+#menu{
+    padding: 10px 30px;
+    background-color:  rgb(255, 255, 255);
+    box-shadow: 0px 5px 5px purple;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+#menu nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu nav ul li{
+    width: 150px;
+    text-align: center;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: #333;
+    font-family: Verdana;
+    font-size: 10pt;
+}
+.titulo-menu{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12pt;
+}
+.usuario{
+    padding: 5px 15px;
+    background-color: rgb(157, 14, 249);
+    color: #fff !important;
+    border: 1px solid rgb(157, 14, 249);
+    border-radius: 7px;
+}
+#painel{
+    background-image: url("https://library.austintexas.gov/library/styles/wide/public/images/large_rotator_1920x480%20copy%206-100.jpg?h=6017a063&itok=VHSbd82Y");  /*1024x400*/
+    height: 400px;
+    margin-top: 7px;
+    background-size: 100%;
+    /* z-index: 0; */
+    padding-top: 100px;
+ }
+#painel form{
+    margin-left: 100px;
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid rgb(157, 14, 249);
+    border-radius: 10px;
+    display: flex;
+    background-color: #fff;
+    align-items: center; /*Alinhamento vertical*/
+    justify-content: space-between;
+}
+#painel form input{
+    border: 0px;
+    width: 400px;
+    margin-right: 10px;
+    padding: 8px;
+    outline: none;
+}
+#painel form button{
+    background-color:  #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+#painel form img{
+    width: 18px;
+    height: 18px;
+}
+main{
+    margin: 50px auto;
+    width: 80%;
+    height: 80%;
+   
+}
+#novidades , #maisvendidos{
+    background-color: #fff;
+    width: 80vw;
+    overflow: hidden;
+}
+#livrosnovidades , #livrosmaisvendidos{
+    background-color: white;
+    display: flex;
+    transition: ease 0.5s;
+
+}
+.livro{
+    width: 200px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}   
+.livro img{
+    width: 200px;
+    height: 260px;
+
+}
+.livro h3{
+    font-family: arial;
+    margin-left: 5px;
+}
+.livro .preco{
+    font-family: arial;
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 10pt;
+}
+#livrosnovidades div button {
+    width: 100%;
+    border-radius: 1px solid rgb(0, 0, 0);
+    padding: 25px;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#livrosnovidades div button img{
+    width: 24px;
+    height: 24px;
+}
+#livrosnovidade div p{
+    font-size: 8pt;
+    color: rgb(157, 14, 249);
+    padding: 1px;
+}
+#livrosnovidades h2, #livrosmaisvendidos{
+    font-family: tahoma;
+    font-size: 15pt;
+}
+.txtnovidades{
+    font-family: tahoma;
+    font-size: 9pt;
+    word-spacing: 2px;
+}
+.seta-esquerda{
+    width: 35px;
+    position: relative;
+    top: -285px;
+    left: -25px;
+}
+.seta-esquerda:hover{
+    transform: scale(1.1);
+}
+.seta-direita{
+    width: 35px;
+    position: relative;
+    top: -321px;
+    right: -1150px;
+}
+.seta-direita:hover{
+    transform: scale(1.1);
+}
+
+#autores h2{
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-weight: lighter;
+    font-size: 20pt;
+    font-style: italic;
+    margin: 50px 0px 10px 0px;
+}
+
+.txtautores{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15pt;
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+}
+
+.autor img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: ease 0.3s;
+    filter: blur(2  px);
+}
+
+.autor img:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    filter: blur(1px);
+}
+
+#livrosautores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.autor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    height: 300px;
+    padding: 50px;
+    background-color: #1E1A10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#endereco{
+    color: #fff;
+    font-family: Arial;
+    font-size: 12pt;
+    line-height: 18pt;
+}
+
+#menufooter nav ul li a{
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    text-decoration: none;
+    padding: 5px;
+}
+
+#redes-pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#redes img{
+    width: 64px;
+    height: 64px;
+    margin: 15px;
+}
+
+main h2 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30pt;
+    font-style: italic;
+    margin: 20px;
+}
+
+#lstlivros{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.livesporte, 
+.livficcao,
+.livromance,
+.livfantasia,
+.livmanga{
+    width: 23%;
+    margin: 10px;
+
+}
+
+.livesporte img,
+.livficcao img,
+.livromance img,
+.livfantasia img,
+.livmanga img{
+    width: 100%;
+    height: 280px;
+}
+
+.livesporte h3,
+.livficcao h3,
+.livromance h3,
+.livfantasia h3,
+.livmanga h3{
+    font-family: 'Lucida Sans';
+    font-size: 12pt;
+}
+
+.livpreco{
+    font-family: 'Lucida Sans';
+    font-size: 10pt;
+    font-weight: bold;
+    color: rgb(46, 3, 3);
+}
+
+.livesporte a,
+.livficcao a,
+.livromance a,
+.livfantasia a,
+.livmanga a {
+    font-family: 'Lucida Sans';
+    font-size: 10pt;
+    text-decoration: none;
+
+}
+
+#detalhes {
+    display: flex;
+    padding: 50px;
+}
+
+#div_capa img{
+    width: 300px;
+    height: 400px;
+}
+#div_miniatura{
+    display: flex;
+    justify-content: space-between;
+}
+#div_miniatura img{
+    width: 70px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#div_titulo_descricao{
+    padding: 0px 10px;
+}
+
+#div_titulo_descricao h3{
+    font-family: 'Lucida Sans';
+    font-size: 20pt;
+    margin-bottom: 30px;
+}
+
+#div_titulo_descricao p{
+    font-family: arial;
+    line-height: 20pt;
+}
+
+#div_carrinho{
+    text-align: right;
+
+}
+#div_carrinho p{
+    font-family: Tahoma;
+    font-size: 20pt;
+    color: darkred;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+#div_carrinho button{
+    width: 200px;
+    background-color: rgb(11, 72, 185);
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+
+#div_qtd_itens{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 9pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -59px;
+    left: 91px;
+    display: none;
+    
+}
+
+#lista_produtos_carrinho div{
+    border: 1px solid silver;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium';
+}
+
+#lista_produtos_carrinho div img{
+    width: 80px;
+    height: 100px;
+    margin: 10px;
+}
+
+#lista_produtos_carrinho div .btnexcluir{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#efetuar_pagamento{
+    border: 0px;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20pt;
+    padding: 10px 20px;
+    background-color:#071cb5;
+    color: white;
+    border-radius: 5px;
+    border-color:beige;
+    font-weight: lighter;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.img_usuario{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}

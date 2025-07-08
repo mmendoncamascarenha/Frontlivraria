@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Brasil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="carregarlivrosficcao()">
+    
+
+<header>
+    <div id="header-black">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">São Paulo, BR</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a href="#" class="titulo-menu">Categorias</a></li>
+                <li><a href="esporte.html">esporte</a></li>
+                <li><a href="ficcao.html">ficcao</a></li>
+                <li><a href="romance.html">romance</a></li>
+                <li><a href="fantasia.html">fantasia</a></li>
+                <li><a href="manga.html">anime</a></li>
+                <li><a href="carrinho.html" class="carrinho"> <img src="img/carrinhodemercado.png" alt="carrinho"></a></li>
+                <li><a href="#" class="usuario" data-bs-toggle="modal" data-bs-target="#exampleModal"> usuário </a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div id="painel">
+        <form onsubmit="return false" id="pesquisa">
+            <input type="text" placeholder="Pesquise pelo título" id="pesquisa-titulo">
+            <button>
+                <img src="img/lupa.png" alt="Clique para pesquisar">
+            </button>
+        </form>
+    </div>
+</header>
+
+
+<main>
+    <h2>Ficção</h2>
+    <div id="lstlivros"></div>
+</main>
+<footer>
+
+<div id="endereco">
+    Rua Cristovão de Figueiredo, 41 - Ermellino Mattarazzo<br/>
+    CEP: 03809-070 São Paulo - SP<br/>
+    Tel.: 11-91248-6970 | 11-98315-7983<br/>
+    Contato WhatsApp <a href="https://wa.me/11996988854" target="_blank"> 11-91248-6970</a>
+
+</div>
+<div id="menufooter">
+    <nav>
+        <ul>
+            <li><a href="#" class="titulo-menu">Categorias</a></li>
+            <li><a href="esporte.html">esporte</a></li>
+            <li><a href="ficcao.html">ficcao</a></li>
+            <li><a href="romance.html">romance</a></li>
+            <li><a href="fantasia.html">fantasia</a></li>
+            <li><a href="manga.html">anime</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <div id="redes-pagamento">
+        <div id="redes">
+            <a href="https://www.instagram.com/murillinho_07/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+            <a href="https://www.snapchat.com" target="_blank"><img src="img/snap.png" alt="snap"></a>
+        </div>
+        <div id="pagamento"><img src="img/formaspagamento.png" alt="pagamento"></div>
+    </div>
+ 
+</footer>
+
+
+<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
